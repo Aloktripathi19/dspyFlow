@@ -24,7 +24,6 @@ Produces a concise bullet-point summary of the final answer.
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/Aloktripathi19/DSPy.git
-cd dspy-cli-tool
 ```
 
 ## Install dependencies
@@ -37,7 +36,7 @@ Create a .env file in the project root:
 - OPENAI_API_KEY=your_openai_api_key_here
 
 ### Verify setup
-python -c "import os; assert os.getenv('OPENAI_API_KEY'), 'API key not set'"
+- python -c "import os; assert os.getenv('OPENAI_API_KEY'), 'API key not set'"
 
 ## ⚙️ Configuration
 - 🧠 Model Choice: Update the model in main.py when calling dspy.LM() (e.g. openai/gpt-4, openai/gpt-3.5-turbo).
@@ -63,13 +62,13 @@ python -c "import os; assert os.getenv('OPENAI_API_KEY'), 'API key not set'"
 ### 🏗️ Modules
 
 #### PromptRefiner
-Uses `dspy.Predict` to refine prompts.
+- Uses `dspy.Predict` to refine prompts.
 
 #### StepwiseAnswerer
-Uses `dspy.ChainOfThought` to generate reasoning and answers.
+- Uses `dspy.ChainOfThought` to generate reasoning and answers.
 
 #### AnswerSummarizer
-Uses `dspy.Predict` to produce concise summaries.
+- Uses `dspy.Predict` to produce concise summaries.
 
 ## 💻 Typer CLI
 
