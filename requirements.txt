@@ -1,0 +1,5 @@
+dspy-ai
+dspy
+openai
+typer[all]
+python-dotenv
